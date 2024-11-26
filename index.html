@@ -5,6 +5,43 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Grid Tutorials Page</title>
         <style>
+            h1 {
+                align-self: auto;
+            }
+            .container {
+                display: grid;
+                height: 70vh;
+                grid-template-columns: 3fr 3fr;
+                grid-template-rows: 3fr 4fr;
+            }
+
+            .tutorial-box {
+                color: rgb(255, 255, 255);
+                padding: 20px;
+            }
+
+            .tutorial-box > a{
+                display: block;
+                text-align: right;
+                font-weight: 600;
+                color: rgb(30, 236, 236);
+            }
+
+            .tutorial-box.one {
+                background-color: red;
+            }
+
+            .tutorial-box.two {
+                background-color: green;
+            }
+
+            .tutorial-box.three {
+                background-color: blue;
+            }
+
+            .tutorial-box.four {
+                background-color: rgb(209, 209, 31);
+            }
 
         </style>
     </head>
@@ -12,8 +49,27 @@
         <header>
 
         </header>
+        <h1>Grid Display</h1>
+        <h2>Tutorials...</h2>
         <div class="container">
+            <div class="tutorial-box one">
+                <h2>Display Grid Tutorial</h2>
+                <a href="grid-display.html">Grid display exercise 'chessboard'</a>
 
+            </div>
+            <div class="tutorial-box two">
+                <h2>Grid Sizing Tutorial</h2>
+                <a href="grid-sizing-test.html">Grid sizing test</a>
+            </div>
+            <div class="tutorial-box three">
+                <h2>Grid Placement</h2>
+                <a href="grid-placement.html">Grid placement page</a>
+                <a target="blank" href="https://cssgridgarden.com/">Grid Garden game</a>
+            </div>
+            <div class="tutorial-box four">
+                <h2>Mondrian Painting</h2>
+                <a href="mondrian-painting.html">Go to the painting page!</a>
+            </div>
         </div>
     </body>
 </html>
